@@ -18,6 +18,8 @@ import { useSearchActions } from "@yext/search-headless-react";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 import { FAQCard } from "../components/search/FaqCard";
+import { ProductCard } from "../components/search/ProductCard";
+import ProductSection from "../components/search/ProductSection";
 
 export const config: TemplateConfig = {
   stream: {
@@ -91,11 +93,11 @@ export const SearchInner: React.FC = () => {
         <UniversalResults
           verticalConfigMap={{
             faqs: { label: "FAQs", CardComponent: FAQCard },
-            // products: {
-            //   label: "Products",
-            //   CardComponent: ProductCard,
-            //   SectionComponent: ProductSection,
-            // },
+            products: {
+              label: "Products",
+              CardComponent: ProductCard,
+              SectionComponent: ProductSection,
+            },
           }}
         />
       </div>

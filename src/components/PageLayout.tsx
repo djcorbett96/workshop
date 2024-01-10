@@ -25,7 +25,7 @@ const PageLayout = ({ children, data, templateData }: PageLayoutProps) => {
   initi18n(locale);
 
   const searchConfig: HeadlessConfig = {
-    apiKey: "e3377abbf6e20d714caa16c4c4eb7007",
+    apiKey: "a0f54ff383a9b716fbbaae59af710d6c",
     experienceKey: "calvins-coffee-search",
     locale,
     experienceVersion: "STAGING",
