@@ -94,7 +94,7 @@ export const SearchInner: React.FC = () => {
           verticalConfigMap={{
             faqs: { label: "FAQs", CardComponent: FAQCard },
             products: {
-              label: "Products",
+              label: t("Products"),
               CardComponent: ProductCard,
               SectionComponent: ProductSection,
             },

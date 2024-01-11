@@ -4,6 +4,7 @@ import { SectionComponent, SectionProps } from "@yext/search-ui-react";
 const ProductSection: SectionComponent = ({
   results,
   CardComponent,
+  header,
 }: SectionProps) => {
   if (!CardComponent) {
     return <div>Missing Card Component</div>;
@@ -11,6 +12,7 @@ const ProductSection: SectionComponent = ({
 
   return (
     <div>
+      <div>{header}</div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {results.map((r, i) => (
           <CardComponent key={i} result={r} />
